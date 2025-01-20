@@ -7,7 +7,7 @@ from utils import clean_text
 
 
 def create_streamlit_app(llm, portfolio, clean_text):
-    st.title("Cold Mail Generator")
+    st.title("ColdReach AI")
     url_input = st.text_input("Enter a URL:")
     submit_button = st.button("Submit")
 
@@ -30,5 +30,5 @@ def create_streamlit_app(llm, portfolio, clean_text):
 if __name__ == "__main__":
     chain = Chain()
     portfolio = Portfolio()
-    st.set_page_config(layout="wide", page_title="Cold Email Generator")
+    st.set_page_config(layout="wide", page_title="ColdReach AI")
     create_streamlit_app(chain, portfolio, clean_text)
